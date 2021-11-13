@@ -1,0 +1,11 @@
+.slider{
+	width: 800px;
+	height: 400px;
+	background: url(1.jpg);
+	margin: 100px auto;
+	animation: slide 20s infinate;
+}
+@keyframe slide{
+	25%{
+
+	}

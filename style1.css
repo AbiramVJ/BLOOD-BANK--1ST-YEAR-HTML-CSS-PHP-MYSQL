@@ -1,0 +1,58 @@
+.body{
+background: #b2beb5;
+}
+
+body{
+  background-image: url('7.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  height: 1000px;
+}
+h1{
+  font-family: all;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+ul {
+ 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FF0000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+
+li a:hover:not(.active) {
+  background-color: #8B0000;
+}
+
+.active {
+  background-color: #8B0000;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}

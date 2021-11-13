@@ -1,0 +1,107 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+    h1{
+      color: red;
+      font: bold;
+    }
+
+/**/
+
+.mySlides {display:none;}
+/*table*/
+th {
+  background-color: #000000;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+
+</style>
+<!-- animatiom -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+ <!--  <div style="background-image: url('7.jpg');"> -->
+  <div class="menubar">
+
+<ul>
+  <li><a class="active" href="home.php">Home</a></li>
+  <li><a href="reg.php">Blood Registration</a></li>
+  <li><a href="admin.php">Admin</a></li>
+  <li><a href="about.php">About</a></li>
+</ul>
+</div>
+<h1 align="center">BLOOD BANK</h1>
+
+
+<!-- animatiom -->
+<div class="w3-content w3-section" style="max-width:500px" align="center">
+  <img class="mySlides" src="1.jpg" style="width:100%" align="center">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<!-- downpage -->
+<br><br>
+<table style="width:100%" bgcolor="red" border="3">
+  <tr>
+    <th>About blood</th>
+    <th>Components of Blood</th> 
+    <th>How does the Body Replace Blood</th>
+  </tr>
+  <tr>
+    <td><p style="color: white;">The ABO blood group system was discovered by<br> Karl Landsteiner in 1900. 46 years later (1946)<br> the Blood Transfusion Service was formed.<br> In 1996 the National Blood Service<br> was formed to collect and provide<br> blood supplies for all <br>the hospitals in Sri Lanka.</p></td>
+    <td><p style="color: white;">When we receive your donation <br>we separate it into individual<br> components by spinning it in a machine called<br> a centrifuge. The individual components<br> are red cells, white cells,<br> platelets and plasma. These can all be put<br> to different uses.</p></td>
+    
+    <td><p style="color: white;">During a whole blood donation<br> we aim to take just under a<br> pint (about 470mls) of blood,<br> which works out at no more than 13<br> per cent of your blood volume.<br> After donation, your body has an<br> amazing capacity to replace all the<br> cells and fluids that have been lost.</p></td>
+    
+  </tr>
+</table>
+<br><br><br>
+
+
+
+<div class="footer">
+  
+  <p>Copyright c2019 right reserved by Srilankan Blood Bank</p>
+  
+</div>
+
+
+
+</body>
+</html>
+
